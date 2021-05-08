@@ -18,28 +18,24 @@ a:link, a:visited { color: #9c84a3; }
 a:focus, a:hover, a:active { color: #d39ae4; }
 
 a {
-  text-decoration: none;
-  border-bottom: 1px dotted;
-  padding-bottom: .2em;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    padding-bottom: .2em;
 }
 
 
 /* header styles */
 header {
   color: white;
-  background:  url(images/croissants_banner.jpg) no-repeat center center;
   background-size: cover; 
   text-align: center;
   height: 15em;
 }
 header p {
-  font-style: italic;
-  font-size: 1.2em;
-  margin-top: -12px;
+  display: none
 }
 header h1 {
   margin-top: 1.5em;
-  text-align:center
 }
 
 
@@ -56,12 +52,26 @@ nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
 }
 nav ul {
   margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 nav ul li {
   font-size: .8em;
   text-transform: uppercase;
   letter-spacing: .2em;
+  flex: 1 1 50%;
 }
+
+nav ul li a { 	
+  display: block; 	
+  border: 1px solid; 
+  padding: .5em 1em; 	
+  border-radius: .5em; 
+  margin: .25em; 
+  } 	
 
 /* main "products" styles */
 main {
@@ -75,12 +85,20 @@ main {
   margin: 2.5%;
 }
 
+address {
+  text-align: center;
+}
+
+div {
+  text-align: center;
+}
+
 main img{
   float: left;
   margin: 0 1em 1em 0;
 }
 
-img[src*="muffin"] {
+img[src*="gallery/images/image1"] {
   margin-left: 50px;
   -webkit-shape-outside: circle(110px);
   shape-outside: polygon(0px 0px, 197px 0px, 241px 31px, 241px 68px, 226px 82px, 219px 131px, 250px 142px, 250px 158px, 0px 159px)
@@ -125,6 +143,7 @@ footer {
 }
 h2 {
   font-family: 'Stint Ultra Expanded', Georgia, serif;
+  text-align: center;
 }
 .day {
   color: #3affd4;
