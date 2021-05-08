@@ -1,5 +1,5 @@
 // 1.
-var friends = ["Meghan", "Seth", "Perrin", "Marcus"];
+var friends = ["Meghan", "Seth", "Brittney", "Marcus"];
 alert( Perrin );
 var name = "Alexia Valdez";
 if( name === Jennifer ) { alert("That's my name too!");}
